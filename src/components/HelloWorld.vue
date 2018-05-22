@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="">
-      {{project.list}}
+      <!-- {{project.list}} -->
     </div>
     <h1>{{ msg }}</h1>
   </div>
