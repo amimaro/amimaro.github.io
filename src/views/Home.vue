@@ -49,8 +49,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
   a {
-    color: black;
+    color: white;
   }
 }
 .brand {

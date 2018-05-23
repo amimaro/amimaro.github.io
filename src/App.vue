@@ -13,7 +13,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: gray;
+  background-color: black;
   font-family: monospace;
 }
 #nav {
