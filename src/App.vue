@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/projects">Projects</router-link> -->
+    <div id="header">
     </div>
     <router-view/>
+    <div id="footer">
+      <p>2018 amimaro</p>
+    </div>
   </div>
 </template>
 
@@ -15,14 +16,16 @@
   position: absolute;
   background-color: black;
   font-family: monospace;
+  display: flex;
+  flex-direction: column;
 }
-#nav {
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+    margin: 0;
   }
 }
 </style>
