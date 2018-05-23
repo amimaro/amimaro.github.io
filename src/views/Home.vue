@@ -1,14 +1,33 @@
 <template>
   <div id="home">
-      <div class="">
+      <div class="name">
         <h1>Amir Zahlan</h1>
       </div>
       <div class="brand">
         <div class="brand-item">
-          <icon class="space-left" name="brands/linkedin" scale="2"></icon>
+          <a href="https://www.linkedin.com/in/amir-zahlan-2143806b/" target="_blank">
+            <icon name="brands/linkedin" scale="2"></icon>
+          </a>
         </div>
         <div class="brand-item">
-          <icon class="space-left" name="brands/github" scale="2"></icon>
+          <a href="https://github.com/amimaro" target="_blank">
+            <icon name="brands/github" scale="2"></icon>
+          </a>
+        </div>
+        <div class="brand-item">
+          <router-link to="/certificates">
+            <icon name="certificate" scale="2"></icon>
+          </router-link>
+        </div>
+        <div class="brand-item">
+          <router-link to="/projects">
+            <icon name="folder-open" scale="2"></icon>
+          </router-link>
+        </div>
+        <div class="brand-item">
+          <router-link to="/books">
+            <icon name="book" scale="2"></icon>
+          </router-link>
         </div>
       </div>
   </div>
@@ -30,6 +49,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  a {
+    color: black;
+  }
 }
 .brand {
   display: flex;
