@@ -13,32 +13,32 @@ const Router = new VueRouter({
       path: "/",
       name: "home",
       component: Home,
-      meta: { title: 'amir zahlan | fullstack developer' }
+      meta: { title: "amir zahlan | fullstack developer" }
     },
     {
       path: "/projects",
       name: "projects",
       component: Projects,
-      meta: { title: 'projects | amir zahlan | fullstack developer' }
+      meta: { title: "projects | amir zahlan | fullstack developer" }
     },
     {
       path: "/certificates",
       name: "certificates",
       component: Certificates,
-      meta: { title: 'certificates | amir zahlan | fullstack developer' }
+      meta: { title: "certificates | amir zahlan | fullstack developer" }
     },
     {
       path: "/books",
       name: "books",
       component: Books,
-      meta: { title: 'books | amir zahlan | fullstack developer' }
+      meta: { title: "books | amir zahlan | fullstack developer" }
     }
   ]
 });
 
 Router.beforeEach((to, from, next) => {
-    document.title = to.meta.title
-    next()
+  document.title = to.meta.title;
+  next();
 });
 
 export default Router;

@@ -3,7 +3,7 @@
       <div class="name">
         <h1>Amir Zahlan</h1>
       </div>
-      <div class="brand">
+      <div class="brands">
         <div class="brand-item">
           <a href="https://www.linkedin.com/in/amir-zahlan-2143806b/" target="_blank">
             <icon name="brands/linkedin" scale="2"></icon>
@@ -12,6 +12,11 @@
         <div class="brand-item">
           <a href="https://github.com/amimaro" target="_blank">
             <icon name="brands/github" scale="2"></icon>
+          </a>
+        </div>
+        <div class="brand-item">
+          <a href="#" v-on:click="toggleEmail()">
+            <icon name="envelope" scale="2"></icon>
           </a>
         </div>
         <div class="brand-item">
@@ -30,15 +35,26 @@
           </router-link>
         </div>
       </div>
+      <div class="contact">
+        <h2 v-if="emailVisibility">amir.zahlan@gmail.com</h2>
+      </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "home",
-  components: {}
+  components: {},
+  data() {
+    return {
+      emailVisibility: false
+    };
+  },
+  methods: {
+    toggleEmail: function() {
+      this.emailVisibility = !this.emailVisibility;
+    }
+  }
 };
 </script>
 
@@ -54,7 +70,7 @@ export default {
     color: white;
   }
 }
-.brand {
+.brands {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -64,5 +80,4 @@ export default {
   padding-right: 10px;
   padding-left: 10px;
 }
-
 </style>
