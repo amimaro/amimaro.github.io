@@ -46,4 +46,21 @@ export default {
     margin: 0;
   }
 }
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+@media (max-width: 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+}
+.list-item {
+  padding: 5px 10px 5px 10px;
+}
 </style>

@@ -1,6 +1,8 @@
 <template>
   <div id="certificates">
-    <h1>This is a certificates page</h1>
+    <div class="list">
+      <img v-for="certificate in images" :src="certificate" alt="certificate" class="list-item">
+    </div>
   </div>
 </template>
 
