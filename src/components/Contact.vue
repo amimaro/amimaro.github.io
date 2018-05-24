@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h2 v-if="emailVisibility">{{email}}</h2>
+    <h2 v-show="emailVisibility">{{email}}</h2>
   </div>
 </template>
 

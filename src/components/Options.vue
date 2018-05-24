@@ -6,6 +6,11 @@
       </router-link>
     </div>
     <div class="list-item">
+      <a href="#" v-on:click="$parent.$refs.contact.toggleEmail()">
+        <icon name="envelope" scale="2"></icon>
+      </a>
+    </div>
+    <div class="list-item">
       <a href="https://www.linkedin.com/in/amir-zahlan-2143806b/" target="_blank">
         <icon name="brands/linkedin" scale="2"></icon>
       </a>
@@ -13,11 +18,6 @@
     <div class="list-item">
       <a href="https://github.com/amimaro" target="_blank">
         <icon name="brands/github" scale="2"></icon>
-      </a>
-    </div>
-    <div class="list-item">
-      <a href="#" v-on:click="$parent.$refs.contact.toggleEmail()">
-        <icon name="envelope" scale="2"></icon>
       </a>
     </div>
     <div class="list-item">
