@@ -1,5 +1,5 @@
 export default {
-  projects: state => {
+  list: state => {
     return state.list;
   }
 };
