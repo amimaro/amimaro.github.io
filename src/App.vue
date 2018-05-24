@@ -4,7 +4,6 @@
     </div>
     <router-view/>
     <div id="footer">
-
       <p>2018 amimaro</p>
     </div>
   </div>
@@ -14,7 +13,7 @@
 import { mapActions } from "vuex";
 
 export default {
-  name: "App",
+  name: "app",
   props: {},
   mounted() {
     this.loadProjects();

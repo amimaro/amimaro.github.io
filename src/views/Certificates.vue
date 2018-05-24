@@ -1,7 +1,7 @@
 <template>
   <div id="certificates">
     <div class="list">
-      <img v-for="certificate in images" :src="certificate" alt="certificate" class="list-item">
+      <img v-for="(certificate, index) in images" v-bind:key="index" :src="certificate" alt="certificate" class="list-item">
     </div>
   </div>
 </template>
@@ -10,7 +10,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  name: "Certificates",
+  name: "certificates",
   props: {},
   computed: {
     ...mapGetters("certificate", ["images"])
