@@ -33,7 +33,6 @@ body {
 #app {
   width: 100%;
   height: 100%;
-  position: absolute;
   font-family: monospace;
   display: flex;
   flex-direction: column;
@@ -50,15 +49,14 @@ body {
 .list {
   display: flex;
   flex-direction: row;
+}
+.center {
   justify-content: center;
-  align-content: space-around;
+  align-items: center;
 }
 @media (max-width: 600px) {
   .list {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
   }
 }
 .list-item {

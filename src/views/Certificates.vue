@@ -2,7 +2,7 @@
   <div id="certificates">
     <Info/>
     <h1>Certificates</h1>
-    <div class="list">
+    <div class="list center">
       <img v-for="(certificate, index) in images"
       v-bind:key="index" :src="certificate" alt="certificate" class="list-item">
     </div>
@@ -33,8 +33,11 @@ export default {
   align-items: center;
   color: white;
   padding-bottom: 5%;
+  h1 {
+    padding: 10px 0px 10px 0px;
+  }
 }
 img {
-  width: 30%;
+  width: 70%;
 }
 </style>
