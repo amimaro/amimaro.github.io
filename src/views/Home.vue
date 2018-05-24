@@ -13,7 +13,7 @@
           </a>
         </div>
         <div class="list-item">
-          <a href="#" v-on:click="toggleEmail()">
+          <a href="#" v-on:click="$refs.contact.toggleEmail()">
             <icon name="envelope" scale="2"></icon>
           </a>
         </div>
@@ -33,29 +33,19 @@
           </router-link>
         </div>
       </div>
-      <div class="contact">
-        <h2 v-if="emailVisibility">amir.zahlan@gmail.com</h2>
-      </div>
+      <Contact ref="contact"/>
   </div>
 </template>
 
 <script>
 import Name from "@/components/Name";
+import Contact from "@/components/Contact";
 
 export default {
   name: "home",
   components: {
-    Name
-  },
-  data() {
-    return {
-      emailVisibility: false
-    };
-  },
-  methods: {
-    toggleEmail: function() {
-      this.emailVisibility = !this.emailVisibility;
-    }
+    Name,
+    Contact
   }
 };
 </script>
