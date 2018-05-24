@@ -77,8 +77,15 @@ export default {
   justify-content: center;
   align-content: space-around;
 }
+@media (max-width: 600px) {
+  .brands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+}
 .brand-item {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 5px 10px 5px 10px;
 }
 </style>
