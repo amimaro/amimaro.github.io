@@ -18,10 +18,12 @@ export default {
   mounted() {
     this.loadProjects();
     this.loadCertificates();
+    this.loadBooks();
   },
   methods: {
     ...mapActions("project", ["loadProjects"]),
-    ...mapActions("certificate", ["loadCertificates"])
+    ...mapActions("certificate", ["loadCertificates"]),
+    ...mapActions("book", ["loadBooks"])
   }
 };
 </script>
