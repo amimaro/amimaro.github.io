@@ -68,6 +68,7 @@ export default {
   color: white;
   a {
     color: white;
+    outline: 0;
   }
 }
 .brands {
