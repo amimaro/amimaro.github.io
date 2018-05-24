@@ -4,9 +4,11 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 import project from "./modules/project/index";
+import certificate from "./modules/certificate/index";
 
 export default new Vuex.Store({
   modules: {
-    project: project
+    project: project,
+    certificate: certificate
   }
 });
