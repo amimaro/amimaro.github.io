@@ -27,11 +27,13 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  background-color: black;
+}
 #app {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: black;
   font-family: monospace;
   display: flex;
   flex-direction: column;
