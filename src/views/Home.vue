@@ -1,22 +1,16 @@
 <template>
   <div id="home">
-      <Name/>
-      <Options/>
-      <Contact ref="contact"/>
+      <Info/>
   </div>
 </template>
 
 <script>
-import Name from "@/components/Name";
-import Contact from "@/components/Contact";
-import Options from "@/components/Options";
+import Info from "@/components/Info";
 
 export default {
   name: "home",
   components: {
-    Name,
-    Contact,
-    Options
+    Info
   }
 };
 </script>
