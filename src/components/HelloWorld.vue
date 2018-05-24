@@ -1,28 +1,14 @@
 <template>
   <div class="hello">
-    <div class="">
-      <!-- {{project.list}} -->
-    </div>
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
-
 export default {
   name: "HelloWorld",
   props: {
     msg: String
-  },
-  mounted() {
-    this.loadProjects();
-  },
-  methods: {
-    ...mapActions("project", ["loadProjects"])
-  },
-  computed: {
-    ...mapState(["project"])
   }
 };
 </script>

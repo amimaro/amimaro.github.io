@@ -1,8 +1,6 @@
 <template>
   <div id="home">
-      <div class="name">
-        <h1>Amir Zahlan</h1>
-      </div>
+      <Name/>
       <div class="list">
         <div class="list-item">
           <a href="https://www.linkedin.com/in/amir-zahlan-2143806b/" target="_blank">
@@ -42,9 +40,13 @@
 </template>
 
 <script>
+import Name from "@/components/Name";
+
 export default {
   name: "home",
-  components: {},
+  components: {
+    Name
+  },
   data() {
     return {
       emailVisibility: false
@@ -66,9 +68,5 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  a {
-    color: white;
-    outline: 0;
-  }
 }
 </style>

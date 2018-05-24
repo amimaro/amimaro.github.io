@@ -62,4 +62,8 @@ export default {
 .list-item {
   padding: 5px 10px 5px 10px;
 }
+a {
+  color: white;
+  outline: 0;
+}
 </style>
