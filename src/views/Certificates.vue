@@ -33,9 +33,6 @@ export default {
   align-items: center;
   color: white;
   padding-bottom: 5%;
-  h1 {
-    padding: 10px 0px 10px 0px;
-  }
 }
 img {
   width: 70%;

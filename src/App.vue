@@ -34,6 +34,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: monospace;
+  position: absolute;
   display: flex;
   flex-direction: column;
 }
@@ -55,6 +56,9 @@ body {
   align-items: center;
 }
 @media (max-width: 600px) {
+  #app {
+    position: relative;
+  }
   .list {
     flex-direction: column;
   }

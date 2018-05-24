@@ -1,6 +1,11 @@
 <template>
   <div class="options list">
     <div class="list-item">
+      <router-link to="/">
+        <icon name="home" scale="2"></icon>
+      </router-link>
+    </div>
+    <div class="list-item">
       <a href="https://www.linkedin.com/in/amir-zahlan-2143806b/" target="_blank">
         <icon name="brands/linkedin" scale="2"></icon>
       </a>
