@@ -3,7 +3,7 @@
   <h1 class="title">Readed Books</h1>
   <div class="columns is-multiline is-mobile">
     <div class="column is-one-quarter" v-for="(book, index) in books" v-bind:key="index">
-      <a :href="book.link" :title="book.title" target="_blank">
+      <a :href="book.link" :title="book.title.concat(' | ', book.author)" target="_blank">
         <img :src="book.image" alt="book" class="list-item">
       </a>
     </div>
