@@ -8,6 +8,7 @@
       </a>
     </div>
   </div>
+  <p>powered by <a href="https://www.goodreads.com" target="_blank">Goodreads</a></p>
 </div>
 </template>
 
