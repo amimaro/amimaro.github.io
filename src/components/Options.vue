@@ -20,7 +20,7 @@
         <icon name="brands/github" scale="2"></icon>
       </a>
     </div>
-    <div class="column">
+    <div class="column" v-on:click="scrollTo('certificates')">
       <router-link to="/certificates">
         <icon name="certificate" scale="2"></icon>
       </router-link>
@@ -30,7 +30,7 @@
         <icon name="folder-open" scale="2"></icon>
       </router-link>
     </div>
-    <div class="column">
+    <div class="column" v-on:click="scrollTo('books')">
       <router-link to="/books">
         <icon name="book" scale="2"></icon>
       </router-link>
@@ -40,6 +40,13 @@
 
 <script>
 export default {
-  name: "options"
+  name: "options",
+  methods: {
+    scrollTo(id) {
+      setTimeout(() => {
+        document.getElementById(id).scrollIntoView({behavior: "smooth"});
+      }, 200)
+    }
+  }
 };
 </script>
