@@ -44,8 +44,8 @@ export default {
   methods: {
     scrollTo(id) {
       setTimeout(() => {
-        document.getElementById(id).scrollIntoView({behavior: "smooth"});
-      }, 200)
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }, 200);
     }
   }
 };
