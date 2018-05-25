@@ -2,21 +2,21 @@
   <div id="app">
     <Info/>
     <router-view/>
-    <div id="footer">
-      <p>2018 amimaro</p>
-    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import { mapActions } from "vuex";
 import Info from "@/components/Info";
+import Footer from "@/components/Footer";
 
 export default {
   name: "app",
   props: {},
   components: {
-    Info
+    Info,
+    Footer
   },
   mounted() {
     this.loadProjects();
@@ -32,57 +32,20 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  background-color: black;
-}
 #app {
   width: 100%;
   height: 100%;
-  font-family: monospace;
   position: absolute;
+  font-family: monospace;
   display: flex;
   flex-direction: column;
 }
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    color: white;
-    margin: 0;
-  }
-}
-.list {
-  display: flex;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.wrap {
-  flex-wrap: wrap;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-}
-.center {
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #app {
     position: relative;
   }
   .list {
     flex-direction: column;
   }
-}
-.list-item {
-  padding: 5px 10px 5px 10px;
-}
-a {
-  color: white;
-  outline: 0;
 }
 </style>

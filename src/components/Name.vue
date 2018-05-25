@@ -1,6 +1,8 @@
 <template>
   <div id="name">
-    <h1>{{name}}</h1>
+    <h1 class="title">
+      {{name}}
+    </h1>
   </div>
 </template>
 
@@ -14,3 +16,10 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+#name {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+</style>

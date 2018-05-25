@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div id="footer" class="has-text-centered">
     <p>{{msg}}</p>
   </div>
 </template>

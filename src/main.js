@@ -10,6 +10,8 @@ Vue.config.productionTip = false;
 
 Vue.component("icon", Icon);
 
+require('./main.scss');
+
 new Vue({
   router,
   store,

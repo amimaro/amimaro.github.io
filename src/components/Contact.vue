@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div id="contact">
     <h2 v-show="emailVisibility">{{email}}</h2>
   </div>
 </template>

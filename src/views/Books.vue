@@ -1,8 +1,8 @@
 <template>
-<div id="books">
-  <h1>Books I Read</h1>
-  <div class="row wrap center">
-    <div class="list center a" v-for="(book, index) in books" v-bind:key="index">
+<div id="books" class="has-text-centered">
+  <h1 class="title">Books I Read</h1>
+  <div class="columns is-multiline is-mobile">
+    <div class="column is-one-quarter" v-for="(book, index) in books" v-bind:key="index">
       <a :href="book.link" :title="book.title" target="_blank">
         <img :src="book.image" alt="book" class="list-item">
       </a>
@@ -28,15 +28,6 @@ export default {
 
 <style lang="scss">
 #books {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
   padding-bottom: 5%;
-}
-img {
-  width: 70%;
 }
 </style>
