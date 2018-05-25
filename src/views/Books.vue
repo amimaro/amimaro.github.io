@@ -28,6 +28,6 @@ export default {
 
 <style lang="scss">
 #books {
-  padding-bottom: 5%;
+  padding: 0% 5% 5% 5%;
 }
 </style>
