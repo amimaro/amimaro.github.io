@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "./views/Home.vue";
+// import Home from "./views/Home.vue";
 import Projects from "./views/Projects.vue";
 import Certificates from "./views/Certificates.vue";
 import Books from "./views/Books.vue";

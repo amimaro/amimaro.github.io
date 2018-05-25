@@ -12,9 +12,7 @@
 </template>
 
 <script>
-import {
-  mapGetters
-} from "vuex";
+import { mapGetters } from "vuex";
 import Info from "@/components/Info";
 
 export default {
@@ -30,15 +28,15 @@ export default {
 
 <style lang="scss">
 #books {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding-bottom: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 5%;
 }
 img {
-    width: 70%;
+  width: 70%;
 }
 </style>
