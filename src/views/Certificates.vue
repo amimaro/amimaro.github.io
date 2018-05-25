@@ -1,6 +1,5 @@
 <template>
   <div id="certificates">
-    <Info/>
     <h1>Certificates</h1>
     <div class="list center">
       <img v-for="(certificate, index) in images"

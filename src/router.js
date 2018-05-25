@@ -12,7 +12,7 @@ const Router = new VueRouter({
     {
       path: "/",
       name: "home",
-      component: Home,
+      // component: Home,
       meta: { title: "amir zahlan | fullstack developer" }
     },
     {

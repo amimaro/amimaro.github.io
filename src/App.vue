@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <div id="header">
-    </div>
+    <Info/>
     <router-view/>
     <div id="footer">
       <p>2018 amimaro</p>
@@ -11,10 +10,14 @@
 
 <script>
 import { mapActions } from "vuex";
+import Info from "@/components/Info";
 
 export default {
   name: "app",
   props: {},
+  components: {
+    Info
+  },
   mounted() {
     this.loadProjects();
     this.loadCertificates();
@@ -51,7 +54,17 @@ body {
 }
 .list {
   display: flex;
+}
+.row {
+  display: flex;
   flex-direction: row;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 .center {
   justify-content: center;
