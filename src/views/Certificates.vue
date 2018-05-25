@@ -32,7 +32,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 img {
   width: 70%;

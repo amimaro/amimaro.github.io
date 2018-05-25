@@ -1,5 +1,5 @@
 export default {
-  images: state => {
-    return state.list;
+  books: state => {
+    return state.data;
   }
 };
