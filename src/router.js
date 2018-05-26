@@ -13,25 +13,25 @@ const Router = new VueRouter({
       path: "/",
       name: "home",
       // component: Home,
-      meta: { title: "amir zahlan | fullstack developer" }
+      meta: { title: "Amir Zahlan | Fullstack Developer" }
     },
     {
       path: "/projects",
       name: "projects",
       component: Projects,
-      meta: { title: "projects | amir zahlan | fullstack developer" }
+      meta: { title: "Projects | Amir Zahlan | Fullstack Developer" }
     },
     {
       path: "/certificates",
       name: "certificates",
       component: Certificates,
-      meta: { title: "certificates | amir zahlan | fullstack developer" }
+      meta: { title: "Certificates | Amir Zahlan | Fullstack Developer" }
     },
     {
       path: "/books",
       name: "books",
       component: Books,
-      meta: { title: "books | amir zahlan | fullstack developer" }
+      meta: { title: "Books | Amir Zahlan | Fullstack Developer" }
     }
   ]
 });
