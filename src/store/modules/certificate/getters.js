@@ -1,8 +1,8 @@
 export default {
   images: state => {
     return state.list
-      .filter((element, id) => {
-        if (id === 0) return false;
+      .filter(element => {
+        if (element.name.indexOf("README") >= 0) return false;
         return true;
       })
       .map(element => {
