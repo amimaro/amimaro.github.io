@@ -10,7 +10,7 @@
             <octicon name="repo" v-else></octicon>
             {{project.name}}
           </h3>
-          <p>{{project.description}}</p>
+          <p><vue-markdown>{{project.description}}</vue-markdown></p>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@ export default {
   padding: 0% 5% 5% 5%;
   .box {
     background-color: black;
-    border:1px solid white;
+    border: 1px solid white;
   }
 }
 </style>
