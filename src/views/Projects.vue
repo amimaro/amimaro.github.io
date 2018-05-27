@@ -1,10 +1,17 @@
 <template>
   <div id="projects" class="has-text-centered">
     <h1 class="title">Projects</h1>
-    <div class="columns">
-      <div class="column" v-for="(project, index) in projects"
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-one-quarter" v-for="(project, index) in projects"
       v-bind:key="index">
-        {{project}}
+        <div class="box">
+          <h3 class="subtitle">
+            <icon name="code-branch" v-if="project.fork"></icon>
+            <icon name="book" v-else></icon>
+            {{project.name}}
+          </h3>
+          <p>{{project.description}}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -28,5 +35,9 @@ export default {
 <style lang="scss">
 #projects {
   padding: 0% 5% 5% 5%;
+  .box {
+    background-color: black;
+    border:1px solid white;
+  }
 }
 </style>
