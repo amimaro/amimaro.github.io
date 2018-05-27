@@ -2,12 +2,12 @@
   <div id="projects" class="has-text-centered">
     <h1 class="title">Projects</h1>
     <div class="columns is-multiline is-mobile">
-      <div class="column is-one-quarter" v-for="(project, index) in projects"
+      <div class="column is-one-third" v-for="(project, index) in projects"
       v-bind:key="index">
         <div class="box">
           <h3 class="subtitle">
-            <icon name="code-branch" v-if="project.fork"></icon>
-            <icon name="book" v-else></icon>
+            <octicon name="repo-forked" v-if="project.fork"></octicon>
+            <octicon name="repo" v-else></octicon>
             {{project.name}}
           </h3>
           <p>{{project.description}}</p>
