@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss">
 #name {
-  padding-top: 1%;
+  padding-top: 2vw;
   padding-bottom: 2vw;
 }
 </style>

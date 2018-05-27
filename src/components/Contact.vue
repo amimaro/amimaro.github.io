@@ -20,3 +20,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+#contact {
+  padding-bottom: 2vw;
+}
+</style>
