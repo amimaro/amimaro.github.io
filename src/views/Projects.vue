@@ -2,7 +2,7 @@
   <div id="projects" class="has-text-centered">
     <h1 class="title">Projects</h1>
     <div class="columns is-multiline is-mobile">
-      <div class="column is-one-third" v-for="(project, index) in projects"
+      <div class="column" v-for="(project, index) in projects"
       v-bind:key="index">
         <div class="box">
           <h3 class="subtitle">
@@ -38,6 +38,7 @@ export default {
   .box {
     background-color: black;
     border: 1px solid white;
+    overflow: auto;
   }
 }
 </style>
