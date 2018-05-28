@@ -1,6 +1,6 @@
 <template>
   <div id="projects" class="has-text-centered">
-    <h1 class="title">Projects</h1>
+    <h1 class="title">GitHub Projects</h1>
     <div class="columns is-multiline is-mobile">
       <div class="column" v-for="(project, index) in projects"
       v-bind:key="index">
@@ -8,7 +8,9 @@
           <h3 class="subtitle">
             <octicon name="repo-forked" v-if="project.fork"></octicon>
             <octicon name="repo" v-else></octicon>
-            {{project.name}}
+            <a :href="project.html_url" target="_blank">
+              {{project.name}}
+            </a>
           </h3>
           <p><vue-markdown>{{project.description}}</vue-markdown></p>
         </div>
