@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.617aaa7fe3107ac6d96ba0eef3a8320d.js"
+  "/precache-manifest.d9cf19961e05b1ef80a8b342be7cef20.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "amimaro.github.io"});
