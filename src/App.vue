@@ -22,11 +22,13 @@ export default {
     this.loadProjects();
     this.loadCertificates();
     this.loadBooks();
+    this.loadNames();
   },
   methods: {
     ...mapActions("project", ["loadProjects"]),
     ...mapActions("certificate", ["loadCertificates"]),
-    ...mapActions("book", ["loadBooks"])
+    ...mapActions("book", ["loadBooks"]),
+    ...mapActions("name", ["loadNames"])
   }
 };
 </script>
