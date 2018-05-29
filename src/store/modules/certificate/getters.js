@@ -7,6 +7,7 @@ export default {
       })
       .map(element => {
         return element.download_url;
-      });
+      })
+      .reverse();
   }
 };
