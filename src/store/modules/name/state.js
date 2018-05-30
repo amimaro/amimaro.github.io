@@ -2,10 +2,8 @@ export default {
   list: [
     "Amir Zahlan",
     "amimaro",
-    "Coder",
-    "sw & hw",
-    "maker",
-    "D.I.Y.",
+    "Fullstack Developer",
+    "Maker",
     "Computer Engineer"
   ]
 };
