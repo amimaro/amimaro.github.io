@@ -9,7 +9,7 @@ export default {
   name: "footer",
   data() {
     return {
-      msg: "2018 amimaro"
+      msg: "© 2018 amimaro"
     };
   }
 };
