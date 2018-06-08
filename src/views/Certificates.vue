@@ -1,10 +1,10 @@
 <template>
   <div id="certificates" class="has-text-centered">
     <h1 class="title">Certificates</h1>
-    <div class="columns  is-multiline is-mobile">
+    <div class="columns is-multiline is-mobile">
       <div class="column is-half" v-for="(certificate, index) in certificates"
       v-bind:key="index">
-        <img :src="certificate" alt="certificate" class="">
+        <img :src="certificate" alt="certificate">
       </div>
     </div>
   </div>
