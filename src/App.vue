@@ -46,8 +46,5 @@ export default {
   #app {
     position: relative;
   }
-  .list {
-    flex-direction: column;
-  }
 }
 </style>
