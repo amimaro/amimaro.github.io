@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <Info/>
-    <router-view/>
-    <Footer/>
+    <div class="container is-fluid" style="height: 100%">
+      <Info/>
+      <router-view/>
+      <Footer/>
+    </div>
   </div>
 </template>
 
